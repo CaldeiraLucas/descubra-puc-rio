@@ -1,0 +1,285 @@
+@font-face {
+	font-family: "Bebas Neue";
+	src: local(Bebas Neue Regular), url(../fonts/Bebas Neue.otf);
+}
+
+
+body {
+	text-align: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 1800px;
+}
+
+a, a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h1, h2, h3 {
+	
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.title {
+	color: white;
+}
+
+.title h3 {
+	font-size: 20px;
+}
+
+.navbar-brand {
+	font-size: 24px;
+	line-height: 40px;
+	text-decoration: none;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+	color: white;
+	border: none;
+	border-radius: 0;
+	background-color: black;
+	padding: 0;
+}
+
+.navbar-nav {
+	margin-left: 35%;
+}
+
+.nav-item {
+	margin-right: 15px;	
+}
+
+.nav-pills > .nav-item > .nav-link {
+	color: white;
+}
+
+.nav-pills > .nav-item > .nav-link:hover,
+.nav-pills > .nav-item > .nav-link:focus {
+  color: black;
+  background-color: orange;
+}
+
+.nav-pills > .nav-item.active > .nav-link,
+.nav-pills > .nav-item.active > .nav-link:hover,
+.nav-pills > .nav-item.active > .nav-link:focus {
+  color: white;
+  background-color: #232324;
+}
+
+
+.my-sm-0 {
+	padding: 5px 10px;
+}
+
+.busca {
+	width: 45px;
+}
+
+.busca img {
+	mix-blend-mode: screen;
+	width: 100%;
+}
+
+.banner {
+	background-image: url("../img/banner.jpg");
+	background-color: rgba(0,0,0, 0.7);
+	background-blend-mode: multiply;
+	background-size: 100%;
+	background-position: 0% 30%;
+	padding-top: 14%;
+	padding-bottom: 10%;
+}
+
+.banner h1 {
+	color: white;
+	font-size: 36px;
+}
+
+.banner h3 {
+	margin-top: 30px;
+	color: white;
+	font-size: 20px;
+}
+
+.descubra {
+	margin-top: 20px;
+	margin-bottom: 3%;
+}
+
+.opcoes {
+	padding: 5% 0;
+	min-height: 900px;
+}
+
+.opcoes h2{
+	margin-bottom: 2%;
+}
+
+.filter-button {
+	margin-right: 5px;
+	background-color: #d8d6c7;
+}
+
+.btn {
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+	background-color: orange;
+}
+
+.gallery {
+	margin-top: 5%;
+}
+
+.card {
+	text-align: left;
+	border: 2px solid #e5e3d4;
+	border-radius: 7px;
+	width: 23%;
+	margin: 1% 1%;
+	padding: 0px;
+	border-radius:.40rem .40rem .50rem .50rem;
+}
+
+.card:hover {
+	border:2px solid orange;
+	border-radius:.40rem .40rem .50rem .50rem;
+	cursor: pointer;
+}
+
+.card-img-top {
+	height: auto;
+	margin: 0 auto;
+}
+
+.ajustar-esq {
+	float: left;
+}
+
+.sobre {
+	padding: 5% 0;
+	background-color: #e5e3d4;
+}
+
+.sobre h1 {
+	font-family: "Bebas Neue", sans-serif;
+}
+
+.sobre h1, .sobre p {
+	text-align: left;
+}
+
+.contato {
+	padding: 5% 0;
+	padding-bottom: 8%;
+	background-color: #e5e3d4;	
+	text-align: left;
+}
+
+.contato h1 {
+	font-family: "Bebas Neue", sans-serif;
+}
+
+.contato img {
+	margin-top: 20%;
+}
+
+form {
+	margin-top: 3%;
+	text-align: left;
+}
+
+.form-check {
+	margin-top: 35px;	
+}
+
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 1% 0;
+	text-align: left;
+}
+
+footer img {
+	float: right;
+}
+
+footer h5 {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+footer p{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.caption {
+	font-size: 12px;
+	margin-bottom: 0px;
+}
+
+
+/*MODAL*/
+
+.modal-lg {	
+	max-width: 900px;
+	text-align: left;
+}
+
+.modal-content {
+	padding: 0% 1%;
+	padding-bottom: 1%;
+}
+
+.modal-title {
+	font-family: "Bebas Neue";
+	font-size: 32px;
+}
+
+.modal-body h3 {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.modal-body a:hover {
+	color: orange;
+}
+
+.modal-body img {
+	border-radius: 5px;
+	box-shadow: 0 0 10px black;
+}
+
+.obs {
+	margin-top: 14%;
+}
+
+.modal-footer {
+	bottom: 0;	
+}
+
+.info {
+	margin-top: 30px;
+}
+

@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Descubra PUC-Rio</title>
+        <!-- Bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link href="css/style.css" rel="stylesheet" media="screen">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    </head>
+    <body>
+		<header class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-expand-md fixed-top navbar-dark" id="navbar-example">
+					<div class="container">
+						<span class="navbar-brand">Descubra <img src="img/selo_cor.jpg" width="55px"></span>
+						<div class="collapse navbar-collapse">
+							<ul class="navbar-nav mr-auto nav-pills">
+								<li class="nav-item">
+									<a class="nav-link" href="#ini">Início </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#sob">Sobre</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#op">Vagas</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#con">Contato</a>
+								</li>								
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<input class="form-control mr-sm-2" type="text" placeholder="Busca" aria-label="Search">
+								<button class="btn btn-outline-light my-2 my-sm-0 busca" type="submit"  onmouseover="img.src='img/search-hover.png'" onmouseout="img.src='img/search.png'"><img src="img/search.png" alt="search button"></button>
+							</form>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<article class="container-fluid banner" data-spy="scroll" data-target="#navbar-example" data-offset="0" id="ini">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Será que você realmente conhece as oportunidades<br>de atividades complementares que a PUC tem para oferecer?</h1>
+					<h3>Palestras - Seminários - Exposições - Monitorias - Estágios </h3>
+					<a href="#op"><input class="btn btn-outline-light btn-lg descubra" type="button" value="Explore"></a>
+				</div>
+			</div>
+		</article>
+		<a id="sob"></a>
+		<article class="row sobre">
+			<div class="container">
+				<div class="row">
+				<div class="col-md-6">				
+					<h1>Sobre</h1>
+					<p>O cumprimento de horas de atividades complementares é um requisito do Ministério da Educação para que a graduação seja concluída, as quais são atividades extra-curriculares em que o aluno aprende 
+					fora da carga horária do curso.</p>
+						
+					<p>Este site tem como finalidade divulgar as atividades complementares sendo realizadas pelo campus da PUC-Rio, seja organizadas por alunos ou pelos núcleos e departamentos da universidade, focando
+					na divulgação de palestras, seminários, congressos, mostras, exposições, assistência em TCCs/mestrados/doutorados e trabalhos voluntários.</p>
+					
+				</div>
+				<div class="col-md-6">					
+					<img src="img/mapa-pucrio.png" class="img-responsive" width="100%">
+					<p><center>Mapa do campus (Anuário 2012)</center></p>
+				</div>
+				</div>
+			</div>
+		</article>
+		<a id="op"></a>
+		<article class="opcoes">				
+			<div class="container">
+				<h2>Descubra aqui a oportunidade que você busca conforme<br>as categorias dos departamentos e unidades da universidade</h2>
+					
+				<input class="btn btn-default filter-button" data-filter="all" type="button" value="Todos">
+				<input class="btn btn-default filter-button" data-filter="cated" type="button" value="Cátedras">
+				<input class="btn btn-default filter-button" data-filter="coord" type="button" value="Coordenações">
+				<input class="btn btn-default filter-button" data-filter="apoio" type="button" value="Órgãos de apoio">
+				<input class="btn btn-default filter-button" data-filter="const" type="button" value="Unidades constitutivas">
+				<input class="btn btn-default filter-button" data-filter="compl" type="button" value="Unidades complementares">
+					
+				<div class="row gallery">								
+					<div class="card filter cated" data-toggle="modal" data-target=".modal-off">								
+						<img class="card-img-top" src="img/sem-img.jpg" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">NAIPD</h4>
+							<p class="card-text">Vinculado à Vice-reitoria Comunitária</p>
+						</div>
+					</div>									
+													
+					<div class="card filter coord" data-toggle="modal" data-target=".modal-off">
+						<img class="card-img-top" src="img/nima.jpg" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">NIMA</h4>
+							<p class="card-text">Vinculado à Vice-reitoria Comunitária</p>
+						</div>
+					</div>
+						
+					<div class="card filter apoio" data-toggle="modal" data-target=".modal-off">
+						<img class="card-img-top" src="img/igualdade.png" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">Grupo Igualdade</h4>
+							<p class="card-text">Vinculado à Vice-reitoria Comunitária</p>
+						</div>
+					</div>							
+							
+					<div class="card filter const" data-toggle="modal" data-target=".modal-off">
+						<img class="card-img-top" src="img/rpg.png" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">Rio PUC Games</h4>
+							<p class="card-text">Vinculado ao Departamento de Artes e Design</p>
+						</div>
+					</div>					
+							
+					<div class="card filter compl" data-toggle="modal" data-target=".modal-off">
+						<img class="card-img-top" src="img/next.png" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">NEXT</h4>
+							<p class="card-text">Vinculado ao Departamento de Artes e Design</p>
+						</div>
+					</div>						
+						
+					<div class="card filter coord" data-toggle="modal" data-target=".modal-off">
+						<img class="card-img-top" src="img/comunicar.png" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">Projeto Comunicar</h4>
+							<p class="card-text">Vinculado ao Departamento de Comunicação Social</p>
+						</div>
+					</div>								
+							
+					<div class="card filter apoio" data-toggle="modal" data-target=".modal-off">
+						<img class="card-img-top" src="img/nada.jpg" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">NADA</h4>
+							<p class="card-text">Vinculado ao Departamento de Artes e Design</p>
+						</div>
+					</div>						
+						
+					<div class="card filter apoio" data-toggle="modal" data-target=".modal-off">
+						<img class="card-img-top" src="img/pastoral.jpg" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">Pastoral Universitária</h4>
+							<p class="card-text">Órgão de apoio</p>
+						</div>
+					</div>		
+							
+					<div class="card filter compl" data-toggle="modal" data-target=".modal-off">
+						<img class="card-img-top" src="img/noap.jpg" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">NOAP</h4>
+							<p class="card-text">Vinculado à Vice-reitoria Acadêmica</p>
+						</div>
+					</div>					
+						
+					<div class="card filter coord" data-toggle="modal" data-target=".modal-off">
+						<img class="card-img-top" src="img/nead.png" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">NEAd</h4>
+							<p class="card-text">Vinculado à Vice-reitoria Comunitária</p>
+						</div>
+					</div>						
+					
+					<div class="card filter apoio" data-toggle="modal" data-target=".modal-off">
+						<img class="card-img-top" src="img/life.jpg" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">LIFE</h4>
+							<p class="card-text">Vinculado ao Departamento de Artes e Design</p>
+						</div>
+					</div>						
+					
+					<div class="card filter cated" data-toggle="modal" data-target=".modal-on">
+						<img class="card-img-top" src="img/neam.jpg" width="auto" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">NEAM</h4>
+							<p class="card-text">Vinculado à Vice-reitoria Comunitária</p>
+						</div>
+					</div>
+				</div>						
+			</div>
+			
+<!----------------------------------------- MODAL ------------------------------------------------------>
+
+			<div class="modal modal-on fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">NEAM - Núcleo de Estudo e Ação sobre o Menor</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-5">
+									<img src="img/neamfoto.jpg" width="100%" />					
+								</div>
+								<div class="col-md-7">
+									
+									<p>O NEAM é uma entidade, inspirada na solidariedade 
+									humana e na fraternidade cristã, que procura transformar adolescentes de classes populares em cidadãos e agentes 
+									de transformação das sociedades em que vivem.
+									Seu objetivo é fazer crescer!</br>
+									<a href="http://www.neam.puc-rio.br/neam/" target="_blank"><strong>Website</strong></a></p>
+
+									<p class="obs"><strong>Coordenador(a):</strong> Profª Marina Moreira</br>
+									<strong>Contatos:</strong> 3527-1368 / neam@puc-rio.br</br>
+									<strong>Local:</strong> Edifício Cardeal Leme, Sobreloja (Escada à direita do FESP)</p>
+								</div>
+							</div>	
+						</div>
+						<div class="modal-footer">			
+							<div class="row">
+								<div class="col-md-6">
+									<h3>Descrição da atividade</h3>
+									<p>Mestrar aulas de disciplinas do final do Ensino Fundamental e do Ensino Médio para alunos da rede pública de ensino.</p>					
+								</div>
+								<div class="col-md-6">
+									<h3>Requisitos</h3>
+									<ul>
+										<li>Possuir boa desenvoltura em ensinar e bom domínio da disciplina que deseja lecionar.</li>	
+										<li>Conter disponibilidade mínima de 2(duas) horas por semana.</li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal modal-off fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Página em construção</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+					...
+					</div>
+					</div>
+				</div>
+			</div>
+	<!---------------------------------------------  --------------------------------------------------->						
+		</article>	
+		<a id="con"></a>
+		<article class="row contato">			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">				
+						<h1>Contato</h1>
+						<p>Deparou-se com um erro em alguma das páginas do site ou alguma delas não carregou?<br>
+						Tem interesse em anunciar uma oportunidade de atividade complementar?</p>
+						<p>Entre em contato através do formulário abaixo:</p>
+						<form>
+							<div class="form-row">
+								<div class="form-group col-10">
+									<label for="exampleFormControlInput2">Nome Completo</label>
+									<input class="form-control" id="exampleFormControlInput1">
+								</div>
+							</div>
+							
+							<div class="form-row">
+								<div class="form-group col-10 form-row">
+									<div class="col-5">
+										<label for="exampleFormControlInput1">Matrícula</label>
+										<input class="form-control" id="exampleFormControlInput1">
+									</div>	
+												
+									<div class="form-check">
+										<label class="form-check-label" for="exampleRadios1">
+										Aluno
+										</label>
+									  <input class="form-check-inline" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+									</div>
+									<div class="form-check">
+									  <label class="form-check-label" for="exampleRadios2">
+										Professor
+									  </label>										
+									  <input class="form-check-inline" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+									</div>
+									<div class="form-check">
+									  <label class="form-check-label" for="exampleRadios3">
+										Funcionário
+									  </label>
+									  <input class="form-check-inline" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+									</div>
+								</div>							
+							</div>
+							
+							<div class="form-row">
+								<div class="form-group col-5">
+									<label for="exampleFormControlInput1">Email</label>
+									<input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+								</div>
+								<div class="form-group col-5">
+									<label for="exampleFormControlInput2">Assunto</label>
+									<input class="form-control" id="exampleFormControlInput3">
+								</div>	
+							</div>
+							<div class="form-row">
+								<div class="form-group col-10">
+									<label for="exampleFormCon	trolTextarea1">Mensagem</label>
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								</div>							
+							</div>
+							<div class="form-row">
+									<div class="form-group col-8">
+										<button type="submit" class="btn btn-outline-dark">Enviar</button>	
+									</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-5">
+						<img src="img/note.png" width="100%">
+					</div>
+				</div>
+			</div>
+		</article>			
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<a href="http://www.puc-rio.br"><img src="img/puc_logo.png" class="img-responsive" width="12%" alt="logo puc-rio"></a>
+					</div>
+					<div class="col-md-7">
+						<h5>Pontifícia Universidade Católica do Rio de Janeiro - PUC-Rio</h5>
+						<p>Rua Marquês de São Vicente, 225, Gávea - Rio de Janeiro, RJ - Brasil</br>
+						Cep: 22451-900 - Cx. Postal: 38097 | Telefone: (55 21) 3527-1001
+						<p class="caption">PUC-RIO © 1992 - 2018. Todos os direitos reservados.</p>
+					</div>
+				</div>
+			</div>		
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
+		<script src="js/bootstrap-portfilter.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
